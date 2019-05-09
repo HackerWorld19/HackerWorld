@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>My Details</title>
+	<style>
+	body {
+  			margin: 0;
+  			background-color: #DFAD09
+}
+@import url(https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet" rel="stylesheet);
+		h1 {
+  font-family: 'Oswald', sans-serif;
+  font-weight: 700;
+  color:#000;
+  font-size:40px;
+  margin-left: 60px;
+  font-style:normal;
+}
+h2 {
+  font-family: 'Oswald', sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  color:#000;
+  font-size:30px;
+  margin-left: 09px;
+}
+	</style>
+</head>
+<body>
+	<h2><a href="{{url_for('index')}}">Home</a>|<a href="{{url_for('register')}}">Register</a></h2>
+<h1>Welcome {{ first_name }}! Here is your details.</h1>
+	<svg height="50" width="800">
+  <g fill="none">
+    <path stroke="black" d="M5 5 l1000 0" />
+    <path stroke="black" d="M5 8 l650 0" />
+  </g>
+  </svg>
+<h2>Names: {{ first_name }}<br />
+Gender :{{ gender }}<br />
+Country:  {{ country }}<br />
+	Career: {{ career }}</h2>
+</body>
+</html>
